@@ -31,9 +31,9 @@ module.exports.run = async function({ api, event }) {
 	if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
 		api.changeNickname(`{ ${global.config.PREFIX} } × ${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 		const fs = require("fs");
-		return api.sendMessage("Hello Everyone🙋‍♂️", event.threadID, () => api.sendMessage({body:`🌺AADI🦋🌺 CONNECTED«
+		return api.sendMessage("Hello Everyone🙋‍♂️", event.threadID, () => api.sendMessage({body:`🌺Vɩvɘĸ Vɩsʜwʌĸʌʀɱʌ🦋🌺 CONNECTED«
 
-Bot Made By AADI BABU☘️
+Bot Made By Vɩvɘĸ Vɩsʜwʌĸʌʀɱʌ☘️
 <------------------------------>  
 BOT CONNECTED SUCCESFUL !!! 
 
@@ -45,7 +45,7 @@ USE HELP TO SEE COMMAND
 <<<<<------------------------------>>>>>
 AND FOR ANY REPORT OR CONTACT BOT DEVELOPER
 
-OWNER: आदि
+OWNER: Vɩvɘĸ Vɩsʜwʌĸʌʀɱʌ
 
 ♻️Facebook: 
 
@@ -80,7 +80,7 @@ https://www.instagram.com/aadi_singh__143?igsh=MXVneXZ6bzR4bHhvcg==￼
 			}
 			memLength.sort((a, b) => a - b);
 			
-			(typeof threadData.customJoin == "undefined") ? msg = "╔════•|      ✿      |•════╗\n 🌿𝗛𝗲𝗹𝗹𝗼 🌿𝗕𝗮𝗯𝘆🌿 \n╚════•|      ✿      |•════╝\n\n    ✨🆆🅴🅻🅻 🅲🅾🅼🅴✨\n\n                 ❥𝐍𝐄𝐖~\n\n        ~🇲‌🇪‌🇲‌🇧‌🇪‌🇷‌~\n\n             [   {name} ]\n\n༄ 𝗠𝘆 𝗚𝗿𝗼𝘂𝗽✺࿐\n\n{threadName}\n\n 🥰🖤🌸𝗛𝗮𝗽𝗽𝘆🍀𝗘𝗻𝗷𝗼𝘆🍀—🌸🥀\n\n         🥀𝗠𝗮𝗷𝗲 𝗞𝗮𝗿𝗼🥀\n\n༄✺𝗢𝗿 𝗧𝘂𝗺 𝗜𝘀 𝗚𝗿𝗼𝘂𝗽 𝗞𝗲 {soThanhVien} 𝗠𝗲𝗺𝗯𝗲𝗿 𝗛𝗼 𝗘𝗻𝗷𝗼𝘆 𝗞𝗮𝗿𝗼 𝗠𝗮𝗷𝗲 𝗟𝗼 [ # ]࿐\n\n    ╔╦══•    •✠•❀•✠ •   •══╦╗\n     ♥  𝐁𝐎𝐓'𝐬 𝐎𝐖𝐍𝐄𝐑♥\n\n                           ☟                     \n\n      ❤AADI BABU❤️\n     ╚╩══•    •✠•❀•✠ •    •══╩╝" : msg = threadData.customJoin;
+			(typeof threadData.customJoin == "undefined") ? msg = "╔════•|      ✿      |•════╗\n 🌿𝗛𝗲𝗹𝗹𝗼 🌿𝗕𝗮𝗯𝘆🌿 \n╚════•|      ✿      |•════╝\n\n    ✨🆆🅴🅻🅻 🅲🅾🅼🅴✨\n\n                 ❥𝐍𝐄𝐖~\n\n        ~🇲‌🇪‌🇲‌🇧‌🇪‌🇷‌~\n\n             [   {name} ]\n\n༄ 𝗠𝘆 𝗚𝗿𝗼𝘂𝗽✺࿐\n\n{threadName}\n\n 🥰🖤🌸𝗛𝗮𝗽𝗽𝘆🍀𝗘𝗻𝗷𝗼𝘆🍀—🌸🥀\n\n         🥀𝗠𝗮𝗷𝗲 𝗞𝗮𝗿𝗼🥀\n\n༄✺𝗢𝗿 𝗧𝘂𝗺 𝗜𝘀 𝗚𝗿𝗼𝘂𝗽 𝗞𝗲 {soThanhVien} 𝗠𝗲𝗺𝗯𝗲𝗿 𝗛𝗼 𝗘𝗻𝗷𝗼𝘆 𝗞𝗮𝗿𝗼 𝗠𝗮𝗷𝗲 𝗟𝗼 [ # ]࿐\n\n    ╔╦══•    •✠•❀•✠ •   •══╦╗\n     ♥  𝐁𝐎𝐓'𝐬 𝐎𝐖𝐍𝐄𝐑♥\n\n                           ☟                     \n\n      ❤Vɩvɘĸ Vɩsʜwʌĸʌʀɱʌ❤️\n     ╚╩══•    •✠•❀•✠ •    •══╩╝" : msg = threadData.customJoin;
 			msg = msg
 			.replace(/\{name}/g, nameArray.join(', '))
 			.replace(/\{type}/g, (memLength.length > 1) ?  'You' : 'Friend')
