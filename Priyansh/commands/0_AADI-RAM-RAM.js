@@ -6,7 +6,7 @@ module.exports.config = {
         name: "Ram",
     version: "1.1.1",
         hasPermssion: 0,
-        credits: "AADI BABU", 
+        credits: "Vɩvɘĸ Vɩsʜwʌĸʌʀɱʌ", 
         description: "THIS BOT IS PREM SHARMA",
         commandCategory: "no prefix",
     cooldowns: 5, 
