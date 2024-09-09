@@ -20,7 +20,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 react.includes("chup kar") ||
 react.includes("Chup kar")) {
                 var msg = {
-                                body: `mere boss ne mana kiya hai. 😆 AGAR MUJHE CHUP KARANA CHAHTE HO TO PAHLE MERE BOSS 𓆩💜𓆪Vɩvɘĸ Vɩsʜwʌĸʌʀɱʌ𓆩💜𓆪 I LOVE YOU BOLNA PADEGA. NHI TO MAI BULUNGA .  . 😆😁" , "tum bhi to chup nhi hote aur mujhe chup kara rahe ho" , "tu chup ja nhi to ek thappad mai nali mai giroge" , "pahli fursat mai nikal ja kar so chup chap`,
+                                body: `mere boss ne mana kiya hai. 😆 AGAR MUJHE CHUP KARANA CHAHTE HO TO PAHLE MERE BOSS 𓆩💜𓆪Vɩvɘĸ Vɩsʜwʌĸʌʀɱʌ𓆩💜𓆪 I LOVE YOU BOLNA PADEGA. NHI TO MAI BULUNGA .  . 😆😁" , "tum bhi to chup nhi hote aur mujhe chup kara rahe ho" , "tu chup ja nhi to ek thappad mai nali mai giroge" , "pahli fursat mai nikal ja kar soja chup chap"`,
                         }
                         api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("😆", event.messageID, (err) => {}, true)
