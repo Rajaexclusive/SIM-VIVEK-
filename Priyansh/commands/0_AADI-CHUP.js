@@ -17,7 +17,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   var id = event.senderID;
   var name = await Users.getNameUser(event.senderID);
 
-  var tl = ["TU CHUP HO JA GUTKA KHA KAR BAAT MAT KIYA KAR" , "BABU SHADI KAR KE HAMESHA KE LIYE CHUP KARA DO" , "PAHLE APNI FRIEND KA NUMBER DE TAB CHUP HOUNG" , "PAHLE LOVE YOU BOL"];
+  var tl = ["TU CHUP HO JA GUTKA KHA KAR BAAT MAT KIYA KAR" , "BABU SHADI KAR KE HAMESHA KE LIYE CHUP KARA DO" , "PAHLE APNI FRIEND KA NUMBER DE TAB CHUP HOUNG" , "MAI TO CHUP HO JAUNGA PAR APNE BACCHO KO TUMKO HI CHUP KARANA PADEGA" , "200 PHONE PAY KAR CHUP HO JATA HU🤑" , "TU GHAR AA PHIR KARATA HU TUJHE CHUP😾🫵" , "PYAR SE DO BAAT KYA KAR KIYA SAR PAR CHADH KE NACHNE LAGI" , "PAHLE MERE BOSS VIVEK KO LOVE BOL" , "HEROINE MAT BANA KAR SAB KE SAMNE TERA NOKAR NHI HU JO CHUP RAHU" , "HO JAO EK DIN CHUP TO YAAD KAROGE KAHA GAYA BAHUT BOLTA THA😔" , "PAHLE LOVE YOU BOL"];
   var rand = tl[Math.floor(Math.random() * tl.length)]
 
     if ((event.body.toLowerCase() == "") || (event.body.toLowerCase() == "") || (event.body.toLowerCase() == "") || (event.body.toLowerCase() == "")) {
