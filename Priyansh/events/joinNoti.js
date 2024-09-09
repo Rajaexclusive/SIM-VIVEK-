@@ -55,11 +55,11 @@ Youtube Site : N/A
 
 ☢️ INSTAGRAM: N/A
 
-https://www.instagram.com/aadi_singh__143?igsh=MXVneXZ6bzR4bHhvcg==￼
+https://www.instagram.com/vivek_vishwakarma31?igsh=MXVneXZ6bzR4bHhvcg==￼
 
-☣️Email: aadibroken046@gmail.com
+☣️Email: vivkebroken046@gmail.com
 
-⚠️Wp: 9548950035 `, attachment: fs.createReadStream(__dirname + "/cache/FB_IMG_1710371802935.jpg")} ,threadID));
+⚠️Wp: ________ `, attachment: fs.createReadStream(__dirname + "/cache/Messenger_creation_F21574C9-0C81-4ED5-9370-41006D278503.jpeg")} ,threadID));
 	}
 	else {
 		try {
