@@ -1,31 +1,42 @@
-//@Prem-babu3608
-////////////////////////////////////////////////////////
-/////// WARNING => JO CREDIT NAME CHANGE KREGA USKA ID BAN KAR DIYA JAYEGA + THIS BOT IS MADE BT PREM BABU
-const fs = require("fs");
+const fs = global.nodemodule["fs-extra"];
 module.exports.config = {
-        name: "Radhe",
-    version: "1.1.1",
-        hasPermssion: 0,
-        credits: "PREM BABU", 
-        description: "THIS BOT IS PREM SHARMA",
-        commandCategory: "no prefix",
-    cooldowns: 5, 
-};
+  name: "chup",
+  version: "1.0.1",
+  hasPermssion: 0,
+  credits: "VIVEK BABU",
+  description: "prem bot",
+  commandCategory: "Noprefix",
+  usages: "noprefix",
+  cooldowns: 5,
+}
+module.exports.handleEvent = async function({ api, event, args, Threads, Users }) {
+  var { threadID, messageID, reason } = event;
+  const moment = require("moment-timezone");
+  const time = moment.tz("Asia/Dhaka").format("HH:MM:ss L");
+  var idgr = `${event.threadID}`;
+  var id = event.senderID;
+  var name = await Users.getNameUser(event.senderID);
 
-module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
-        var { threadID, messageID } = event;
-        let react = event.body.toLowerCase();
-        if(react.includes("Chup") ||
-     react.includes("CHUP") || react.includes("chup") || react.includes("CHUP KAR") ||
-react.includes("chup kar") ||
-react.includes("Chup kar")) {
-                var msg = {
-                                body: `mere boss ne mana kiya hai. 😆 AGAR MUJHE CHUP KARANA CHAHTE HO TO PAHLE MERE BOSS 𓆩💜𓆪Vɩvɘĸ Vɩsʜwʌĸʌʀɱʌ𓆩💜𓆪 I LOVE YOU BOLNA PADEGA. NHI TO MAI BULUNGA .  . 😆😁" , "tum bhi to chup nhi hote aur mujhe chup kara rahe ho" , "tu chup ja nhi to ek thappad mai nali mai giroge" , "pahli fursat mai nikal ja kar soja chup chap"`,
-                        }
-                        api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("😆", event.messageID, (err) => {}, true)
-                }
-        }
-        module.exports.run = function({ api, event, client, __GLOBAL }) {
+  var tl = ["TU CHUP HO JA GUTKA KHA KAR BAAT MAT KIYA KAR" , "babu shadi kar do hamesha chup rahunga"];
+  var rand = tl[Math.floor(Math.random() * tl.length)]
 
-  }
+    if ((event.body.toLowerCase() == "") || (event.body.toLowerCase() == "") || (event.body.toLowerCase() == "") || (event.body.toLowerCase() == "")) {
+     return api.sendMessage("", threadID);
+   };
+  
+   mess = "{name}"
+  
+  if (event.body.indexOf("Chup") == 0 || (event.body.indexOf("CHUP") == 0)) {
+    var msg = {
+      body: `🍁🌼🌹 ${name} 🌹🌼🍁\n\n 👉
+      
+      
+     ${rand} \n\n                       
+      `
+    }
+    return api.sendMessage(msg, threadID, messageID);
+  };
+
+}
+
+module.exports.run = function({ api, event, client, __GLOBAL }) { }
