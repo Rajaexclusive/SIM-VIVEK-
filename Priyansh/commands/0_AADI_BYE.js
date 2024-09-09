@@ -17,7 +17,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   var id = event.senderID;
   var name = await Users.getNameUser(event.senderID);
 
-  var tl = ["BYE BYE" , "BYE BABY CHUMMA DE KAR JANA" , "BABY ABHI SE JA RAHI HO" , "MUJHE BYE BOL KE APNE BABU KE PASS JA RAHI HO" , " BYE BOL KE DUSRE KO LINE MARNE JA RAHE HO];
+  var tl = ["BYE BYE GN" , "BYE BYE BABY 😘" , "NIKAL PAHLI FURSAT MAI" , " CHAL DAFA HO YAHA SE" , " JA KALA MUH KAR" , "YAHA BYE BOL KE DUSRE KO LINE MAROGE" , "MUJHE AKELA CHHOD KE MAT JAO BABU" , "AKELE SOOGE KYA YA MAI AAU🙈" , "OK MERI JAAN SO JAO GN LOVE YOU 😘"];
   var rand = tl[Math.floor(Math.random() * tl.length)]
 
     if ((event.body.toLowerCase() == "") || (event.body.toLowerCase() == "") || (event.body.toLowerCase() == "") || (event.body.toLowerCase() == "")) {
@@ -26,7 +26,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   
    mess = "{name}"
   
-  if (event.body.indexOf("BYE") == 0 || (event.body.indexOf("bye") == 0)) {
+  if (event.body.indexOf("bye") == 0 || (event.body.indexOf("BYE") == 0)) {
     var msg = {
       body: `💙 ─── ${name} ─── 💙\n\n 
       
