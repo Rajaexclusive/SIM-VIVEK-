@@ -1,31 +1,41 @@
-//@Prem-babu3608
-////////////////////////////////////////////////////////
-/////// WARNING => JO CREDIT NAME CHANGE KREGA USKA ID BAN KAR DIYA JAYEGA + THIS BOT IS MADE BT PREM BABU
-const fs = require("fs");
+const fs = global.nodemodule["fs-extra"];
 module.exports.config = {
-        name: "BYE",
-    version: "1.1.1",
-        hasPermssion: 0,
-        credits: "PREM BABU", 
-        description: "THIS BOT IS PREM SHARMA",
-        commandCategory: "no prefix",
-    cooldowns: 5, 
-};
+  name: "bye",
+  version: "1.0.1",
+  hasPermssion: 0,
+  credits: "AADI BABU",
+  description: "AADI BOT",
+  commandCategory: "Noprefix",
+  usages: "noprefix",
+  cooldowns: 5,
+}
+module.exports.handleEvent = async function({ api, event, args, Threads, Users }) {
+  var { threadID, messageID, reason } = event;
+  const moment = require("moment-timezone");
+  const time = moment.tz("Asia/Dhaka").format("HH:MM:ss L");
+  var idgr = `${event.threadID}`;
+  var id = event.senderID;
+  var name = await Users.getNameUser(event.senderID);
 
-module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
-        var { threadID, messageID } = event;
-        let react = event.body.toLowerCase();
-        if(react.includes("BYE") ||
-     react.includes("bye") || react.includes("Bye") || react.includes("𝐁𝐘𝐄") ||
-react.includes("🅱🆈🅴") ||
-react.includes("🄱🅈")) {
-                var msg = {
-                                body: `🙋  🄱🅈🄴 🄱🅈🄴 🄱🄰🄱🅄 🄼🄸🅂🅂 🅈🄾🅄 🄱🄷🅄🅃 🅂🄰🅁🄰  🙋`,
-                        }
-                        api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("🥺", event.messageID, (err) => {}, true)
-                }
-        }
-        module.exports.run = function({ api, event, client, __GLOBAL }) {
+  var tl = ["BYE BYE" , "BYE BABY CHUMMA DE KAR JANA" , "BABY ABHI SE JA RAHI HO" , "MUJHE BYE BOL KE APNE BABU KE PASS JA RAHI HO"];
+  var rand = tl[Math.floor(Math.random() * tl.length)]
 
-  }
+    if ((event.body.toLowerCase() == "") || (event.body.toLowerCase() == "") || (event.body.toLowerCase() == "") || (event.body.toLowerCase() == "")) {
+     return api.sendMessage("", threadID);
+   };
+  
+   mess = "{name}"
+  
+  if (event.body.indexOf("BYE") == 0 || (event.body.indexOf("bye") == 0)) {
+    var msg = {
+      body: `💙 ─── ${name} ─── 💙\n\n 
+      
+    ${rand} \n\n                       
+      `
+    }
+    return api.sendMessage(msg, threadID, messageID);
+  };
+
+}
+
+module.exports.run = function({ api, event, client, __GLOBAL }) { }
