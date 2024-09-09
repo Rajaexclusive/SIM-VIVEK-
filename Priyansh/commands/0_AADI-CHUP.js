@@ -17,7 +17,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   var id = event.senderID;
   var name = await Users.getNameUser(event.senderID);
 
-  var tl = ["TU CHUP HO JA GUTKA KHA KAR BAAT MAT KIYA KAR" , "babu shadi kar do hamesha chup rahunga"];
+  var tl = ["TU CHUP HO JA GUTKA KHA KAR BAAT MAT KIYA KAR" , "BABU SHADI KAR KE HAMESHA KE LIYE CHUP KARA DO" , "PAHLE APNI FRIEND KA NUMBER DE TAB CHUP HOUNG" , "PAHLE LOVE YOU BOL"];
   var rand = tl[Math.floor(Math.random() * tl.length)]
 
     if ((event.body.toLowerCase() == "") || (event.body.toLowerCase() == "") || (event.body.toLowerCase() == "") || (event.body.toLowerCase() == "")) {
@@ -28,7 +28,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   
   if (event.body.indexOf("Chup") == 0 || (event.body.indexOf("CHUP") == 0)) {
     var msg = {
-      body: `🍁🌼🌹 ${name} 🌹🌼🍁\n\n 👉
+      body: `💙 ─── ${name} ─── 💙\n\n 👉
       
       
      ${rand} \n\n                       
