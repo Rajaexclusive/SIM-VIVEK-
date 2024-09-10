@@ -17,7 +17,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   var id = event.senderID;
   var name = await Users.getNameUser(event.senderID);
 
-  var tl = ["BYE LINE "];
+  var tl = ["BYE BYE SWEET HEART 😘" , "BABU JA RAHE HO MUJHE CHHOD KE😔" , "BABY MAT JAO NA😢" , "MUJHE PATA HAI TUM YAHA BYE BOL KAR KAHI AUR MUH KALA KRANE JA RAHE HO😾" , "NIKAL PAHLI FURSAT MAI😏" , "DUBARA DIKHAI NA DENA 😾" , "BABU CHUMMA DE KAR JAO😘" , "SAB MUJHE CHHOD KE CHALE GAYE AB TUMNE BHI BYE BOL DIYA🥺"];
   var rand = tl[Math.floor(Math.random() * tl.length)]
 
     if ((event.body.toLowerCase() == "") || (event.body.toLowerCase() == "") || (event.body.toLowerCase() == "") || (event.body.toLowerCase() == "")) {
