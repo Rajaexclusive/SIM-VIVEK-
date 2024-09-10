@@ -21,7 +21,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   var rand = tl[Math.floor(Math.random() * tl.length)]
 
     if ((event.body.toLowerCase() == "") || (event.body.toLowerCase() == "") || (event.body.toLowerCase() == "") || (event.body.toLowerCase() == "")) {
-     return api.sendMessage("💙 ─── MOTE 😁 MOYE  ───💙", threadID);
+     return api.sendMessage("💙 ─── MOYE MOYE HO GAYA ISKA TO😅  ───💙", threadID);
    };
   
    mess = "{name}"
